@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Speedometer HUD</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="hud">
+    <div class="speed-container">
+      <div id="speed" class="speed">000</div>
+      <div class="unit">KM/H</div>
+    </div>
+
+    <div class="bar-container">
+      <div class="label">Vitesse</div>
+      <div class="bar-bg">
+        <div class="bar-fill" id="rpm-bar"></div>
+      </div>
+      <div class="label">Essence</div>
+      <div class="bar-bg">
+        <div class="bar-fill fuel" id="fuel-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

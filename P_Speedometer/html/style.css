@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.hud {
+  position: absolute;
+  bottom: 3%;
+  left: 88%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px 40px;
+  border: 1px solid violet;
+  border-radius: 15px;
+  box-shadow: 0 0 20px violet;
+}
+
+.speed-container {
+  text-align: center;
+}
+
+.speed {
+  font-size: 64px;
+  color: violet;
+  text-shadow: 0 0 10px violet;
+}
+
+.unit {
+  font-size: 18px;
+  color: white;
+}
+
+.bar-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 150px;
+}
+
+.label {
+  color: white;
+  font-size: 14px;
+}
+
+.bar-bg {
+  width: 100%;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  width: 0%;
+  background: violet;
+  transition: width 0.2s ease-in-out;
+  box-shadow: 0 0 8px violet;
+}
+
+.fuel {
+  background: #d9a8ff;
+  box-shadow: 0 0 8px #d9a8ff;
+}
